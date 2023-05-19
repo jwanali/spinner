@@ -1,35 +1,20 @@
-setTimeout(() => {
-  process.stdout.write('\r|   ');
-}, 100);
-setTimeout(() => {
-  process.stdout.write('\r/   ');
-}, 300);
-setTimeout(() => {
-  process.stdout.write('\r-   ');
-}, 500);
-setTimeout(() => {
-  process.stdout.write('\r\\   '); 
-}, 700);
-setTimeout(() => {
-  process.stdout.write('\r|   '); 
-  console.log();
-}, 900);
 
 
 
-/*
 let n = 0;
+const array = ['|','/','-','\\','|'];
 
-for (let i = 1; i <= 5; i++) {
+for (let i = 0; i < 5; i++) {
   setTimeout(() => {
     //console.log()
-    process.stdout.write('\r| ');
+
+    process.stdout.write(`\r${array[i]}`);
   }, n);
+ 
   n += 200;
 }
+
 setTimeout(() => {
   //console.log()
   process.stdout.write('\n');
-},1900);
-
-*/
+},n)
